@@ -1,10 +1,13 @@
 # PlantIll
 
+Mobile appliction for plant disease recognition using deep learning model 
  
+## About :
 
-This project is two parts: 
+This project is two parts : 
     - Deep learning part :
-    we did train a model for plant disease recognition, You can find the work under the folder /DPModel, more explanation below
+    we did train a model for plant disease recognition, You can find the work under the folder /DPModel, 
+    more explanation below
     (Dataset, Weights, Training)
     - Mobile dev part :
     We build this part using Flutter 
