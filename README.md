@@ -61,14 +61,7 @@ All the models were trained to respect the following steps :
 
 The following table shows 
 
-|Model     |Accuracy |Time       |
-|:---:     |  :---:  |:---:      |
-|Resnet18  |99.00    |24.7 ms    |
-|Resnet34  |99.02    |37 ms      |
-|AlexNet   |97.66    |**15.3 ms**|
-|VGG16     |98.66    |71.1 ms    |
-|IceptionV3|**99.48**|51.6 m     |
-
+![](results.png)
 
 ## Deployment of the best model :
   "TODO  how you did your deployment "
