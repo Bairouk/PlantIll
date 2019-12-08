@@ -1,0 +1,147 @@
+PODS:
+  - camera (0.0.1):
+    - Flutter
+  - Firebase/Auth (6.6.0):
+    - Firebase/CoreOnly
+    - FirebaseAuth (~> 6.2.2)
+  - Firebase/Core (6.6.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 6.1.0)
+  - Firebase/CoreOnly (6.6.0):
+    - FirebaseCore (= 6.2.0)
+  - firebase_auth (0.0.1):
+    - Firebase/Auth (~> 6.0)
+    - Firebase/Core
+    - Flutter
+  - firebase_core (0.0.1):
+    - Firebase/Core
+    - Flutter
+  - FirebaseAnalytics (6.1.0):
+    - FirebaseCore (~> 6.2)
+    - FirebaseInstanceID (~> 4.2)
+    - GoogleAppMeasurement (= 6.1.0)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (~> 0.3)
+  - FirebaseAuth (6.2.2):
+    - FirebaseAuthInterop (~> 1.0)
+    - FirebaseCore (~> 6.2)
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.2)
+    - GoogleUtilities/Environment (~> 6.2)
+    - GTMSessionFetcher/Core (~> 1.1)
+  - FirebaseAuthInterop (1.0.0)
+  - FirebaseCore (6.2.0):
+    - FirebaseCoreDiagnostics (~> 1.0)
+    - FirebaseCoreDiagnosticsInterop (~> 1.0)
+    - GoogleUtilities/Environment (~> 6.2)
+    - GoogleUtilities/Logger (~> 6.2)
+  - FirebaseCoreDiagnostics (1.0.1):
+    - FirebaseCoreDiagnosticsInterop (~> 1.0)
+    - GoogleDataTransportCCTSupport (~> 1.0)
+    - GoogleUtilities/Environment (~> 6.2)
+    - GoogleUtilities/Logger (~> 6.2)
+  - FirebaseCoreDiagnosticsInterop (1.0.0)
+  - FirebaseInstanceID (4.2.3):
+    - FirebaseCore (~> 6.0)
+    - GoogleUtilities/Environment (~> 6.0)
+    - GoogleUtilities/UserDefaults (~> 6.0)
+  - Flutter (1.0.0)
+  - GoogleAppMeasurement (6.1.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (~> 0.3)
+  - GoogleDataTransport (1.1.1)
+  - GoogleDataTransportCCTSupport (1.0.1):
+    - GoogleDataTransport (~> 1.1)
+    - nanopb
+  - GoogleUtilities/AppDelegateSwizzler (6.2.5):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.2.5)
+  - GoogleUtilities/Logger (6.2.5):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.2.5):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.2.5):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.2.5)"
+  - GoogleUtilities/Reachability (6.2.5):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (6.2.5):
+    - GoogleUtilities/Logger
+  - GTMSessionFetcher/Core (1.2.2)
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
+  - path_provider (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - camera (from `.symlinks/plugins/camera/ios`)
+  - firebase_auth (from `.symlinks/plugins/firebase_auth/ios`)
+  - firebase_core (from `.symlinks/plugins/firebase_core/ios`)
+  - Flutter (from `.symlinks/flutter/ios`)
+  - path_provider (from `.symlinks/plugins/path_provider/ios`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Firebase
+    - FirebaseAnalytics
+    - FirebaseAuth
+    - FirebaseAuthInterop
+    - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCoreDiagnosticsInterop
+    - FirebaseInstanceID
+    - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleDataTransportCCTSupport
+    - GoogleUtilities
+    - GTMSessionFetcher
+    - nanopb
+
+EXTERNAL SOURCES:
+  camera:
+    :path: ".symlinks/plugins/camera/ios"
+  firebase_auth:
+    :path: ".symlinks/plugins/firebase_auth/ios"
+  firebase_core:
+    :path: ".symlinks/plugins/firebase_core/ios"
+  Flutter:
+    :path: ".symlinks/flutter/ios"
+  path_provider:
+    :path: ".symlinks/plugins/path_provider/ios"
+
+SPEC CHECKSUMS:
+  camera: 38cc83ae9a5667bb5a71c7d9edaf60a91920fd4e
+  Firebase: a2b5951f30ff38fd3b3bdae9c7d340f940fd3c51
+  firebase_auth: 55c9944133e1005a7d257035e2f36dd971859748
+  firebase_core: b3b02d0b5e9d01aab5e50ba7cbcf84c73cb6883c
+  FirebaseAnalytics: 48414ae5cbf6976d8a2f7177e0466540e5ab33ce
+  FirebaseAuth: 2be1924ddbc741fe2a02cb6963ca747e09a2e05c
+  FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
+  FirebaseCore: 8c9e08bce0c72a3affd83927d8184cf244918bc8
+  FirebaseCoreDiagnostics: 4c04ae09d0ab027c30179828c6bb47764df1bd13
+  FirebaseCoreDiagnosticsInterop: 6829da2b8d1fc795ff1bd99df751d3788035d2cb
+  FirebaseInstanceID: 8b42755db950682e7de0d167bc6fb26a57b244af
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  GoogleAppMeasurement: 47285fa897e5a125df56b9ef8750a1d81e4598a8
+  GoogleDataTransport: ffbadce4ab93c88fb9dd8e6366c47bfcb4a32193
+  GoogleDataTransportCCTSupport: 3451e7d8ba19093e533362a6d78d6d9014c6a037
+  GoogleUtilities: e7dc37039b19df7fe543479d3e4a02ac8d11bb69
+  GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  path_provider: fb74bd0465e96b594bb3b5088ee4a4e7bb1f2a9d
+
+PODFILE CHECKSUM: 1e26fd0905dc0e150fa2e71a06786f2f6b150ffe
+
+COCOAPODS: 1.8.4

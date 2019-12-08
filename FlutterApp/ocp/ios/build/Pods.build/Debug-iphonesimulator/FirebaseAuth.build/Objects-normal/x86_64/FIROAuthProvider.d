@@ -1,0 +1,22 @@
+dependencies: \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/AuthProvider/OAuth/FIROAuthProvider.m \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIROAuthProvider.h \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRFederatedAuthProvider.h \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthUIDelegate.h \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/Headers/Private/FirebaseCore/FIRApp.h \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/Headers/Private/FirebaseCore/FIROptions.h \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/FIRAuthBackend.h \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Auth/FIRAuth_Internal.h \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuth.h \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthErrors.h \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthAPNSTokenType.h \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/Headers/Private/FirebaseAuthInterop/FIRAuthInterop.h \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Utilities/FIRAuthErrorUtils.h \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Auth/FIRAuthGlobalWorkQueue.h \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/FIRAuthRequestConfiguration.h \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/FIRAuthRPCRequest.h \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Utilities/FIRAuthWebUtils.h \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/AuthProvider/OAuth/FIROAuthCredential_Internal.h \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIROAuthCredential.h \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthCredential.h \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Utilities/FIRAuthURLPresenter.h

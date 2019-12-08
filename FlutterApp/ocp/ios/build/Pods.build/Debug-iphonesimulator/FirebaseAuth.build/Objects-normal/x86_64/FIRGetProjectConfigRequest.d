@@ -1,0 +1,6 @@
+dependencies: \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/RPC/FIRGetProjectConfigRequest.m \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/RPC/FIRGetProjectConfigRequest.h \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/FIRIdentityToolkitRequest.h \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/FIRAuthRequestConfiguration.h \
+  /Users/mac/Documents/Android/Projects/ocp/ios/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/FIRAuthRPCRequest.h

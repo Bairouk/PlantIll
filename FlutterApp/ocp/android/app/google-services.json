@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "252829615357",
+    "firebase_url": "https://ocpapp-a4739.firebaseio.com",
+    "project_id": "ocpapp-a4739",
+    "storage_bucket": "ocpapp-a4739.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:252829615357:android:d6c053d41942a741",
+        "android_client_info": {
+          "package_name": "com.tifawt.ocp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "252829615357-9lc8mmn2a9ajmbskhfg25ebvt3ki6pbo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAo5ekDE-_xD6BZtuayKA7ZTDQDMNI_3Ms"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "252829615357-9lc8mmn2a9ajmbskhfg25ebvt3ki6pbo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
