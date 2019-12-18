@@ -2,10 +2,16 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
 import 'package:ocp/configs/AppColors.dart';
+import 'package:ocp/network/NetworkCall.dart';
 import 'package:ocp/screens/previewscreen/home.dart';
 import 'package:path/path.dart';
 import 'package:path_provider/path_provider.dart';
-import '../previewscreen/preview_screen.dart';
+import 'package:http/http.dart' as http;
+import 'package:async/async.dart';
+import 'dart:io';
+import 'dart:convert';
+import 'package:path/path.dart';
+
 
 class CameraScreen extends StatefulWidget {
   @override
@@ -225,7 +231,8 @@ class _CameraScreenState extends State {
       Navigator.push(
         context,
         MaterialPageRoute(
-          builder: (context) => Home(imagePath: path),
+          builder: (context)  => Home(path),
+
         ),
       );
     } catch (e) {
@@ -241,3 +248,30 @@ class _CameraScreenState extends State {
     print('Error: ${e.code}\n${e.description}');
   }
 }
+
+
+/*
+uploadImageToServer(File imageFile) async
+{
+  print("attempting to connecto server......");
+  var stream = new http.ByteStream(DelegatingStream.typed(imageFile.openRead()));
+  var length = await imageFile.length();
+  print(length);
+
+  var uri = Uri.parse('https://tiny-bird-61.localtunnel.me/predict');
+  print("connection established.");
+  var request = new http.MultipartRequest("POST", uri);
+  var multipartFile = new http.MultipartFile('file', stream, length,
+      filename: basename(imageFile.path));
+  //contentType: new MediaType('image', 'png'));
+  request.files.add(multipartFile);
+  print("waiting for response");
+  var response = await request.send();
+  var respStr = await response.stream.bytesToString();
+  var jsondata = json.decode(respStr);
+  print('Bihy here');
+//  print(json.decode(response.body));
+  print(jsondata);
+  print(response.statusCode);
+  return respStr;
+}*/

@@ -4,13 +4,26 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:ocp/configs/AppColors.dart';
 import 'package:ocp/network/NetworkCall.dart';
+import 'package:http/http.dart' as http;
+
 
 class Home extends StatelessWidget {
   final List<Color> colors = [AppColors.lightTeal, AppColors.lightTeal];
   final List<Color> colors2 = [Color(0xffff7ae9), Color(0xfff2855c)];
-  final String imagePath;
+  String imagePath;
 
-  Home({this.imagePath});
+
+  Home(this.imagePath);
+ /* Home(String imagePath, http.StreamedResponse response){
+    this.imagePath=imagePath;
+    this.response=response;
+  }*/
+
+  results  () async{
+    ImageData my_res=  await uploadImageToServer(File(imagePath));
+    print(my_res);
+    return my_res.prediction;
+  }
 
 
 
@@ -42,7 +55,7 @@ class Home extends StatelessWidget {
                 ],
               ),
             ),
-            buildInfoColumn(),
+            buildInfoColumn1(),
             buildBottomRow(size),
           ],
         ),
@@ -57,13 +70,15 @@ class Home extends StatelessWidget {
       decoration: BoxDecoration(
           borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(50),
-              bottomRight: Radius.circular(50)),
+              bottomRight: Radius.circular(50)
+          ),
           gradient: LinearGradient(
             colors: colors,
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
             stops: [0.2, 1],
-          )),
+          )
+      ),
     );
   }
 
@@ -106,7 +121,7 @@ class Home extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Text(
-            "Apple: Apple_scab",
+            '${results()}',
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
           ),
           Container(
@@ -116,7 +131,7 @@ class Home extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Text(
-                "Accuracy : 96%",
+                "Accuracy: ${results()}",
                 style: TextStyle(color: Colors.blueGrey.shade600),
               ),
             ],
@@ -148,6 +163,74 @@ class Home extends StatelessWidget {
       ),
     );
   }
+  Widget buildInfoColumn1() {
+
+    return FutureBuilder(
+        future: uploadImageToServer(File(imagePath)),
+        builder: (BuildContext context, AsyncSnapshot snapshot){
+          print(snapshot.data);
+          if(snapshot.data == null){
+            return Container(
+                child: Center(
+                    child: Text("Loading...")
+                )
+            );
+          }else{
+            return Container(
+              margin: EdgeInsets.only(top: 10),
+              child: Column(
+                children: <Widget>[
+                  Text(
+                    '${snapshot.data.prediction}',
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16),
+                  ),
+                  Container(
+                    height: 8,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        "Accuracy: ${snapshot.data.accuracy}",
+                        style: TextStyle(color: Colors.blueGrey.shade600),
+                      ),
+                    ],
+                  ),
+                  Container(
+                    height: 8,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      IconButton(
+                        color: Colors.blueGrey,
+                        icon: Icon(FontAwesomeIcons.instagram),
+                        onPressed: () {},
+                      ),
+                      IconButton(
+                        color: Colors.blueGrey,
+                        icon: Icon(FontAwesomeIcons.facebookF),
+                        onPressed: () {},
+                      ),
+                      IconButton(
+                        color: Colors.blueGrey,
+                        icon: Icon(FontAwesomeIcons.twitter),
+                        onPressed: () {},
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            );
+
+          }
+
+    },
+    );
+
+  }
+
+
 
   Widget buildBottomRow(Size size) {
     return Container(

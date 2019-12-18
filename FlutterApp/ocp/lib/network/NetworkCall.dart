@@ -9,41 +9,32 @@ class ImageData
 //  static String  BASE_URL ='http://192.168.1.103:5000/';
   String uri;
   String prediction;
-  ImageData(this.uri,this.prediction);
+  String accuracy;
+  ImageData(this.uri,this.prediction,this.accuracy);
 }
 // upload image to our server
-uploadImageToServer(File imageFile) async
+Future<ImageData> uploadImageToServer(File imageFile) async
 {
   print("attempting to connecto server......");
   var stream = new http.ByteStream(DelegatingStream.typed(imageFile.openRead()));
   var length = await imageFile.length();
   print(length);
 
-  var uri = Uri.parse('http://192.168.1.103:5000/predict');
+  var uri = Uri.parse('http://480bed17.ngrok.io/predict');
   print("connection established.");
   var request = new http.MultipartRequest("POST", uri);
   var multipartFile = new http.MultipartFile('file', stream, length,
       filename: basename(imageFile.path));
   //contentType: new MediaType('image', 'png'));
   request.files.add(multipartFile);
+  print("waiting for response");
   var response = await request.send();
+  var respStr = await response.stream.bytesToString();
+  var jsondata = json.decode(respStr);
+  print('Bihy here');
+//  print(json.decode(response.body));
+  print(jsondata);
   print(response.statusCode);
-  return response;
-}
-//our image loader
-Future<List<ImageData>> LoadImages() async
-{
-  List<ImageData> list;
-  //complete fetch ....
-  var data = await http.get(
-     'http://192.168.1.103:5000/api/');
-  var jsondata = json.decode(data.body);
-  List<ImageData> newslist = [];
-  for (var data in jsondata) {
-
-    ImageData n = ImageData(data['url'],data['prediction']);
-    newslist.add(n);
-  }
-
-  return newslist; 
+  var my_resp =ImageData('nothing',jsondata['predi']['prediction'],jsondata['predi']['confidence']);
+  return my_resp;
 }
