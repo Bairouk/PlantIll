@@ -10,12 +10,6 @@ This project is two parts :
     
  - Mobile dev part: We build this part using Flutter.
 
-## Authors:
-
-- [Boutaina BELAKHDAR]()
-- [Anass BAIROUK](https://www.linkedin.com/in/anass-bairouk-258673109/)
-
-
 
 # 1-Deep Learning Model
 
